@@ -1,0 +1,11 @@
+{
+  "name": "Prequel Meme Generator",
+  "version": "0.1",
+  "description": "A simple chrome extension to show the extension is viable",
+  "permissions": ["storage"],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "manifest_version": 2
+}
