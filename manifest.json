@@ -1,11 +1,28 @@
 {
   "name": "Prequel Meme Generator",
-  "version": "0.1",
-  "description": "A simple chrome extension to show the extension is viable",
-  "permissions": ["storage"],
+  "version": "1.0",
+  "description": "A simple Chrome Extension that incorporates Reddit API and Javascript to display r/PrequelMemes.",
+  "permissions": ["activeTab", "declarativeContent", "storage"],
+  "options_page": "options.html",
   "background": {
     "scripts": ["background.js"],
     "persistent": false
   },
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "images/get_started16.png",
+      "32": "images/get_started32.png",
+      "48": "images/get_started48.png",
+      "128": "images/get_started128.png"
+    }
+  },
+  "icons": {
+    "16": "images/get_started16.png",
+    "32": "images/get_started32.png",
+    "48": "images/get_started48.png",
+    "128": "images/get_started128.png"
+  },
+  
   "manifest_version": 2
 }
